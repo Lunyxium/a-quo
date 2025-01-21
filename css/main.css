@@ -1,0 +1,392 @@
+/*
+Original CSS File by Mathias Bäumli
+i know its a mess, other styles by WebStorm IDE.
+*/
+html {
+  font-style: normal;
+  font: 14px "Fira Sans", sans-serif;
+  line-height: 1.4;
+}
+body {
+
+  background-color: #333;
+  color: aliceblue;
+}
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+footer {
+  display: flex;
+  transform: translateY(80%);
+  justify-content: center;
+  padding: 18px;
+  background-color: #1b2530;
+  color: #fff;
+  width:45%;
+  margin: auto;
+  border: 3px solid #5be6ff;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px aliceblue;
+  outline: 3px solid #5be6ff;
+  padding: 9px;
+  background-color: #1b2530;
+
+}
+a {
+  cursor: default;
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: deepskyblue 1px 0 10px;
+}
+a:hover {
+  color: black;
+  font-weight: bold;
+  text-shadow: ghostwhite 0 0 5px;
+  text-decoration: underline ghostwhite 2px;
+  text-underline-position: under;
+}
+.sidebar {
+    padding: 100px;
+    position: fixed; /* Fixiert die Leiste an der linken Seite */
+    top: 26%; /* Zentriert vertikal */
+    left: 18%; /* Am linken Rand */
+    transform: translateY(-30%); /* Exakte Vertikalzentrierung */
+    background-color: #1b2530; /* Hintergrundfarbe der Leiste */
+    padding: 10px;
+    outline: 3px solid #5be6ff;
+    z-index: 1000; /* Stellt sicher, dass die Leiste oben angezeigt wird */
+}
+.sidebar img {
+    display: block; /* Bilder werden untereinander angeordnet */
+    width: 64px; /* Bildbreite */
+    height: 64px; /* Bildhöhe */
+    margin-bottom: 6px; /* Abstand zwischen den Bildern */
+    border-radius: 5px; /* Optionale abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    cursor: pointer; /* Zeigt an, dass das Bild klickbar ist */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation für Hover-Effekte */
+}
+.sidebar img:hover {
+    transform: scale(1.1); /* Leichtes Vergrößern beim Hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stärkere Schatten beim Hover */
+}
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #33424d;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.project-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #53636e;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.project-card img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.project-details {
+  max-width: 600px;
+}
+.project-details h3 {
+  margin: 0 0 10px;
+}
+.project-details p {
+  margin: 0 0 10px;
+}
+.project-details a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3a576b;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.project-details a:hover {
+  background-color: #1d3342;
+}
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.blog-post {
+  background: #53636e;
+  border: 3px solid #999999;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 650px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.blog-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+}
+.blog-title {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.blog-date {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  color: aliceblue;
+}
+.blog-content {
+  margin: 0;
+  font-size: 1rem;
+  color: aliceblue;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
