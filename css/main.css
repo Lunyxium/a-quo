@@ -51,10 +51,10 @@ a:hover {
   text-underline-position: under;
 }
 .sidebar {
-    padding: 40px;
+    padding: 100px;
     position: fixed; /* Fixiert die Leiste an der linken Seite */
     top: 26%; /* Zentriert vertikal */
-    left: 9%; /* Am linken Rand */
+    left: 8%; /* Am linken Rand */
     transform: translateY(-30%); /* Exakte Vertikalzentrierung */
     background-color: #1b2530; /* Hintergrundfarbe der Leiste */
     outline: 3px solid #5be6ff;
@@ -62,16 +62,16 @@ a:hover {
 }
 .sidebar img {
     display: block; /* Bilder werden untereinander angeordnet */
-    width: 64px; /* Bildbreite */
-    height: 64px; /* Bildhöhe */
+    width: 48px; /* Bildbreite */
+    height: 48px; /* Bildhöhe */
     margin-bottom: 6px; /* Abstand zwischen den Bildern */
-    border-radius: 5px; /* Optionale abgerundete Ecken */
+    border-radius: 3px; /* Optionale abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
     cursor: pointer; /* Zeigt an, dass das Bild klickbar ist */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation für Hover-Effekte */
 }
 .sidebar img:hover {
-    transform: scale(1.1); /* Leichtes Vergrößern beim Hover */
+    transform: scale(1.15); /* Leichtes Vergrößern beim Hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stärkere Schatten beim Hover */
 }
 .container {
