@@ -63,10 +63,10 @@ a:hover {
     left: 4%; /* Am linken Rand */
     transform: translateY(-30%); /* Exakte Vertikalzentrierung */
     background-color: #1b2530; /* Hintergrundfarbe der Leiste */
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     outline: 2px solid #5be6ff;
     z-index: 1000; /* Stellt sicher, dass die Leiste oben angezeigt wird */
     transform: scale(0.8);
@@ -76,13 +76,14 @@ a:hover {
     width: 48px; /* Bildbreite */
     height: 48px; /* Bildhöhe */
     margin-bottom: 2px; /* Abstand zwischen den Bildern */
-    border-radius: 3px; /* Optionale abgerundete Ecken */
+    border-radius: 5px; /* Optionale abgerundete Ecken */
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
     cursor: pointer; /* Zeigt an, dass das Bild klickbar ist */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation für Hover-Effekte */
 }
 .sidebar img:hover {
     transform: scale(1.2); 
+    box-radius: 5px;
     box-shadow: 0 6px 12px rgba(170, 240, 255, 0.3);
 }
 .container {
