@@ -26,8 +26,10 @@ footer {
   color: #fff;
   width:45%;
   margin: 50px auto 30px auto;
-  padding-bottom: 30px;
   border: 3px solid #5be6ff;
+}
+.margin-bottom {
+  margin-bottom: 60px;
 }
 .center {
   margin: auto;
