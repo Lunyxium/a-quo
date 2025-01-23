@@ -25,7 +25,8 @@ footer {
   background-color: #1b2530;
   color: #fff;
   width:45%;
-  margin: 50px auto 30px auto;
+  margin: 30px auto 30px auto;
+  transform: translateY(30px);
   border: 3px solid #5be6ff;
 }
 .margin-bottom {
