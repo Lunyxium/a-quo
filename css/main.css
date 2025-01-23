@@ -49,6 +49,7 @@ a:hover {
   text-shadow: ghostwhite 0 0 5px;
   text-decoration: underline ghostwhite 2px;
   text-underline-position: under;
+  transform: scale(1.15); 
 }
 .sidebar {
     padding: 50px;
@@ -144,7 +145,7 @@ a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .blog-post:hover {
-  transform: translateY(-4px);
+  transform: scale(1.15); 
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
 }
 .blog-title {
