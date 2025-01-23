@@ -51,13 +51,13 @@ a:hover {
   text-underline-position: under;
 }
 .sidebar {
-    padding: 100px;
+    padding: 50px;
     position: fixed; /* Fixiert die Leiste an der linken Seite */
     top: 35%; /* Zentriert vertikal */
     left: 12%; /* Am linken Rand */
     transform: translateY(-30%); /* Exakte Vertikalzentrierung */
     background-color: #1b2530; /* Hintergrundfarbe der Leiste */
-    padding: 10px;
+    padding: 8px;
     outline: 3px solid #5be6ff;
     z-index: 1000; /* Stellt sicher, dass die Leiste oben angezeigt wird */
 }
