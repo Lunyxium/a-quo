@@ -11,6 +11,7 @@ body {
   margin-top: 30px;
   background-color: #333;
   color: aliceblue;
+  padding-bottom: 30px;
 }
 article {
   min-height: 100%;
