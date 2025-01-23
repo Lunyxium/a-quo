@@ -37,7 +37,7 @@ footer {
   margin: auto;
   width: 50%;
   border: 2px aliceblue;
-  outline: 3px solid #5be6ff;
+  outline: 2px solid #5be6ff;
   padding: 20px;
   background-color: #1b2530;
 }
@@ -74,7 +74,7 @@ a:hover {
     height: 48px; /* Bildhöhe */
     margin-bottom: 2px; /* Abstand zwischen den Bildern */
     border-radius: 3px; /* Optionale abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
     cursor: pointer; /* Zeigt an, dass das Bild klickbar ist */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation für Hover-Effekte */
 }
@@ -142,7 +142,7 @@ a:hover {
   background: #53636e;
   /*border: 3px solid #5be6ff
   border-radius: 2px;*/
-  box-shadow: rgba(91, 230, 255, 0.3) 0px 8px 24px;
+  box-shadow: rgba(91, 230, 255, 0.3) 0px 0px 10px;
   padding: 15px;
   max-width: 650px;
   width: 100%;
