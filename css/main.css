@@ -60,7 +60,7 @@ a:hover {
     padding: 8px;
     outline: 3px solid #5be6ff;
     z-index: 1000; /* Stellt sicher, dass die Leiste oben angezeigt wird */
-    transform: scale(0.7);
+    transform: scale(0.8);
 }
 .sidebar img {
     display: block; /* Bilder werden untereinander angeordnet */
