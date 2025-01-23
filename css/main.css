@@ -53,7 +53,7 @@ a:hover {
 .sidebar {
     padding: 50px;
     position: fixed; /* Fixiert die Leiste an der linken Seite */
-    top: 40%; /* Zentriert vertikal */
+    top: 35%; /* Zentriert vertikal */
     left: 4%; /* Am linken Rand */
     transform: translateY(-30%); /* Exakte Vertikalzentrierung */
     background-color: #1b2530; /* Hintergrundfarbe der Leiste */
